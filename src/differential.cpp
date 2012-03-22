@@ -1290,7 +1290,7 @@ void sample_worker(const RefSequenceTable& rt,
         // If Cuffdiff was built without threads, we need to manually invoke 
         // the testing functor, which will check to see if all the workers
         // are done, and if so, perform the cross sample testing.
-        launcher->abundance_avail(locus_tag, abundance, factory_id);
+        //launcher->abundance_avail(locus_tag, abundance, factory_id);
         launcher->test_finished_loci();
         //launcher();
 #endif

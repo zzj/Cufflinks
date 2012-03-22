@@ -598,7 +598,6 @@ bool BAMHitFactory::get_hit_from_buf(const char* orig_bwt_buf,
                         mass,
                         sam_flag);
 		return true;
-		
 	}
 	else
 	{	

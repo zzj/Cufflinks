@@ -631,7 +631,7 @@ void filter_junk_isoforms(vector<shared_ptr<Abundance> >& transcripts,
             {
                 double low_qual_hits = 0.0;
                 static const double low_qual_err_prob = high_phred_err_prob; // hits with error_prob() above this are low quality;
-                static const double low_qual_thresh = 0.75; // hits with more than this fraction of low qual hits are repeats
+                static const double low_qual_thresh = 1; // hits with more than this fraction of low qual hits are repeats
                 for (vector<const MateHit*>::const_iterator itr = hits.begin();
                      itr != hits.end();
                      ++itr)
